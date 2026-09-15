@@ -17,7 +17,7 @@
 <main class="wrap">
   <article>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: September 14, 2026</p>
+    <p class="updated">Last updated: September 15, 2026</p>
     <p><a href="#ru" lang="ru">Русская версия ниже</a></p>
 
     <p>This Privacy Policy explains how Parser (<a href="https://parser.saitradar.ru">https://parser.saitradar.ru</a>, "Parser", "the app") handles data. Parser is operated by Svetlana, an individual ("we", "the operator"). Contact: <a href="mailto:svetlanaproai@gmail.com">svetlanaproai@gmail.com</a>.</p>
@@ -32,7 +32,7 @@
       <li>an access token.</li>
     </ul>
     <p>We use this only to show which account is connected and to run keyword searches for you. This data is kept only in the server's memory for the duration of your session, at most 1 hour. It is never written to a database, and it is deleted when you log out or when the session expires.</p>
-    <p>Exception: the access token of the operator's own Threads account is stored in a protected server configuration file so that scheduled searches can run.</p>
+    <p>Exception: for the one Threads account that Parser uses for scheduled keyword searches, Parser stores a long-lived access token together with the account ID and username in a protected file on the server, so that searches can run every two hours. The token is refreshed automatically and is deleted when that account removes Parser's access or asks for deletion.</p>
 
     <h2>3. Public posts found by keyword search</h2>
     <p>Through the <code>threads_keyword_search</code> permission, Parser receives public Threads posts that match keywords. For each post it receives the post ID, text, link (permalink), publication time and the author's public username.</p>
@@ -60,7 +60,7 @@
     <p>We do not share data with anyone else.</p>
 
     <h2>7. Security</h2>
-    <p>All connections to Parser use HTTPS. The operator interface is accessible only to approved Telegram accounts. The operator's access token is kept in protected server configuration; tokens of people who log in on the Connect page stay only in server memory.</p>
+    <p>All connections to Parser use HTTPS. The operator interface is accessible only to approved Telegram accounts. The access token of the account used for scheduled searches is kept in a protected file on the server that only the server can read; tokens of other people who log in on the Connect page stay only in server memory.</p>
 
     <h2>8. Your rights and choices</h2>
     <ul>
@@ -80,7 +80,7 @@
 
   <article id="ru" lang="ru">
     <h1>Политика конфиденциальности</h1>
-    <p class="updated">Обновлено: 14 сентября 2026 года</p>
+    <p class="updated">Обновлено: 15 сентября 2026 года</p>
 
     <p>Эта политика объясняет, как Parser (<a href="https://parser.saitradar.ru">https://parser.saitradar.ru</a>, «Parser», «приложение») обращается с данными. Parser управляет Светлана, частное лицо («мы», «оператор»). Связь: <a href="mailto:svetlanaproai@gmail.com">svetlanaproai@gmail.com</a>.</p>
 
@@ -94,7 +94,7 @@
       <li>токен доступа.</li>
     </ul>
     <p>Эти данные нужны только для того, чтобы показать, какой аккаунт подключён, и выполнять для вас поиск по ключевым словам. Они хранятся только в памяти сервера на время сессии, не дольше 1 часа, никогда не записываются в базу данных и удаляются при выходе из аккаунта или по истечении сессии.</p>
-    <p>Исключение: токен доступа собственного аккаунта Threads оператора хранится в защищённом файле конфигурации на сервере, чтобы поиск мог выполняться по расписанию.</p>
+    <p>Исключение: для одного аккаунта Threads, от имени которого Parser ищет посты по расписанию, приложение хранит долгосрочный токен доступа вместе с идентификатором и именем аккаунта в защищённом файле на сервере, чтобы поиск выполнялся каждые два часа. Токен продлевается автоматически и удаляется, когда владелец аккаунта отзывает доступ Parser или просит удалить данные.</p>
 
     <h2>3. Публичные посты, найденные поиском по ключевым словам</h2>
     <p>Через разрешение <code>threads_keyword_search</code> Parser получает публичные посты Threads, подходящие под ключевые слова. По каждому посту приходят идентификатор, текст, ссылка (permalink), время публикации и публичное имя пользователя автора.</p>
@@ -122,7 +122,7 @@
     <p>Больше мы никому данные не передаём.</p>
 
     <h2>7. Безопасность</h2>
-    <p>Все соединения с Parser идут по HTTPS. Интерфейс оператора доступен только одобренным аккаунтам Telegram. Токен доступа оператора хранится в защищённой конфигурации сервера, а токены тех, кто входит на странице подключения, — только в памяти сервера.</p>
+    <p>Все соединения с Parser идут по HTTPS. Интерфейс оператора доступен только одобренным аккаунтам Telegram. Токен аккаунта для поиска по расписанию хранится в защищённом файле, доступном только серверу, а токены остальных, кто входит на странице подключения, — только в памяти сервера.</p>
 
     <h2>8. Ваши права</h2>
     <ul>
